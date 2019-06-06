@@ -87,3 +87,22 @@ footer {
       'footer footer';
   }
 }
+@media screen and (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-rows: 50px 1fr 100px 1fr 100px 1fr 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'nav nav nav nav'
+      'feat1 feat1 feat1 feat1'
+      'small11 small12 small13 small14'
+      'feat2 feat2 feat2 feat2'
+      'small21 small22 small23 small24'
+      'feat3 feat3 feat3 feat3'
+      'footer footer footer footer';
+  }
+  img {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
