@@ -1,0 +1,89 @@
+ 
+ html, body {
+  margin: 0;
+  padding: 0; 
+}
+body {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 1fr repeat(4, 100px) 1fr repeat(4, 100px) 1fr 400px; 
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'nav'
+  'feat1'
+  'small11'
+  'small12'
+  'small13'
+  'small14'
+  'feat2'
+  'small21'
+  'small22'
+  'small23'
+  'small24'
+  'feat3'
+  'footer';
+}
+nav {
+  grid-area: nav;
+  background-color: grey;
+}
+#feat1 {
+  grid-area: feat1;
+}
+img {
+  max-width: 100%;
+}
+div {
+  background-color: royalblue;
+}
+#small11 {
+  grid-area: small11;
+}
+#small12 {
+  grid-area: small12;
+}
+#small13 {
+  grid-area: small13;
+}
+#small14 {
+  grid-area: small14;
+}
+#feat2 {
+  grid-area: feat2;
+}
+#small21 {
+  grid-area: small21;
+}
+#small22 {
+  grid-area: small22;
+}
+#small23 {
+  grid-area: small23;
+}
+#small24 {
+  grid-area: small24;
+}
+#feat3 {
+  grid-area: feat3;
+}
+footer {
+  grid-area: footer;
+  background-color: hotpink;
+}
+@media screen and (min-width: 800px) {
+  body {
+    display: grid;
+    grid-template-rows: 50px 1fr repeat(2, 100px) 1fr repeat(2, 100px) 1fr 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'nav nav'
+      'feat1 feat1'
+      'small11 small12'
+      'small13 small14'
+      'feat2 feat2'
+      'small21 small22'
+      'small23 small24'
+      'feat3 feat3'
+      'footer footer';
+  }
+}
